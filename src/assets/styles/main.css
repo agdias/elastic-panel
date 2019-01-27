@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+   background:  #282c34;
+}
+
+.es-instances-form {
+    display: flex;
+    align-items: center;
+   
+}
+
+
+.es-instances-form li {
+    margin: 0 5px;
+    list-style-type: none;
+}
+
+.es-instances-form input[type=text] {
+    width: 100%;
+    padding: 3px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.icons {
+    color: white;
+}
+
+
+.main {
+    max-width: 100vw;
+}
+
+.header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    border: thin solid gray;
+   
+}
+

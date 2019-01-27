@@ -1,0 +1,55 @@
+Insights
+
+Criar 1 reducer para cada ambiente
+
+const health = (state = {}, action) {
+    switch ( action.type ) {
+        case FETCH_HEALTH_DATA_HML:
+         return {}
+        case FETCH_HEALTH_DATA_PRD:
+         return {}
+    }
+}
+
+
+const instances = [
+    prd: {
+        health: {
+            state: 'green',
+            number_of_nodes: '4',
+            unassigned_shards: '0'
+        },
+        nodes: {
+
+        }
+    }
+]
+
+[environment]   /=== health
+                \=== nodes
+
+
+{
+    instances: {
+        prd: {
+          label: 'production'
+          ip: '10.0.100.195',
+          port: '9200'
+          health: {
+              status: 'green',
+              number_of_nodes: 4,
+              unassigned_shards: 0
+          }
+        },
+        hml: {
+            label: 'staging',
+            ip: '10.0.60.156',
+            port: '9200',
+            health: {
+                status: 'yellow',
+                number_of_nodes: 2,
+                unassigned_shards: 5
+            }
+        }
+    }
+}
